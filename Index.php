@@ -1,4 +1,12 @@
 <html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Veterinaria</title>
+  </head>
+  <h1> Veterinaria </h1> 
+  <button id="submit" name="submit" type = "submit" value = "Agregar" onclick="Agregar()">Agregar</button href = "formAM.php">
+    
     <body>
         <table class="table table-striped table-bordered">
             <thead>
@@ -11,6 +19,10 @@
             <th style='width:150px;'>Pelaje</th>
             <th style='width:150px;'>Fecha Nacimiento</th>
             <th style='width:150px;'>Dueño</th>
+            <th style='width:150px;'>Editar</th>
+            <th style='width:150px;'>Borrar</th>
+            
+            
             </tr>
             </thead>
             <tbody>
@@ -58,7 +70,8 @@
                     $totalPaginas = ceil($cantidadTotalElementos / $cantidadMaximaElementosPagina);
 
                     //############## REALIZO LA CONSULTA PARA OBTENER SOLO LOS ELEMENTOS DE LA PAGINA ACTUAL ##############
-                    $sentencia = $mysqli->prepare("SELECT a.ID_animal, a.Nombre, a.Especie, a.Raza, a.Sexo, a.Pelaje, a.Fecha_nacimiento, d.Nombre FROM animal a Left Join dueño d ON a.id_dueño = d.ID_dueño LIMIT $offset, $cantidadMaximaElementosPagina");
+                    $sentencia = $mysqli->prepare("SELECT a.ID_animal, a.Nombre as NombreAnimal, a.Especie, a.Raza, a.Sexo, a.Pelaje, a.Fecha_nacimiento, d.Nombre as NombreDueño FROM animal a Left Join dueño d ON a.id_dueño = d.ID_dueño
+                    where a.estado = 1 LIMIT $offset, $cantidadMaximaElementosPagina");
                     $sentencia->execute();
                     $resultado = $sentencia->get_result();
                     $fila = $resultado->fetch_assoc();
@@ -67,15 +80,14 @@
                     {
                         echo "  <tr>
                                     <td>".$fila['ID_animal']."</td>
-                                    <td>".$fila['Nombre']."</td>
+                                    <td>".$fila['NombreAnimal']."</td>
                                     <td>".$fila['Especie']."</td>
                                     <td>".$fila['Raza']."</td>
                                     <td>".$fila['Sexo']."</td>
                                     <td>".$fila['Pelaje']."</td>
                                     <td>".$fila['Fecha_nacimiento']."</td>
-                                    <td>".$fila['Nombre']."</td>
-                                    <td></td>
-                                </tr>";
+                                    <td>".$fila['NombreDueño']."</td>
+                                  </tr>";
                         
                         $fila = $resultado->fetch_assoc();
                     }
