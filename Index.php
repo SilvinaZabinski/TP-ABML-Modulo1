@@ -5,7 +5,9 @@
     <title>Veterinaria</title>
   </head>
   <h1> Veterinaria </h1> 
-  <button id="submit" name="submit" type = "submit" value = "Agregar" onclick="Agregar()">Agregar</button href = "formAM.php">
+
+  <a href="formAM.php"><input type="button" value="Agregar"></a>
+
     
     <body>
         <table class="table table-striped table-bordered">
@@ -87,6 +89,8 @@
                                     <td>".$fila['Pelaje']."</td>
                                     <td>".$fila['Fecha_nacimiento']."</td>
                                     <td>".$fila['NombreDueño']."</td>
+                                    <TD><INPUT class=boton type=submit value=Editar name=Submit></TD>
+                                    <TD><INPUT class=boton type=submit value=Borrar name=Submit></TD>
                                   </tr>";
                         
                         $fila = $resultado->fetch_assoc();
