@@ -1,13 +1,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="IndexStyle.Css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Veterinaria</title>
   </head>
   <h1> Veterinaria </h1> 
-
-  <a href="formAM.php"><input type="button" value="Agregar"></a>
-
+  <button id="submit" name="submit" type = "submit" value = "Agregar" onclick="Agregar()">Agregar</button href = "formAM.php">
     
     <body>
         <table class="table table-striped table-bordered">
@@ -89,8 +87,6 @@
                                     <td>".$fila['Pelaje']."</td>
                                     <td>".$fila['Fecha_nacimiento']."</td>
                                     <td>".$fila['NombreDueño']."</td>
-                                    <TD><INPUT class=boton type=submit value=Editar name=Submit></TD>
-                                    <TD><INPUT class=boton type=submit value=Borrar name=Submit></TD>
                                   </tr>";
                         
                         $fila = $resultado->fetch_assoc();
@@ -127,4 +123,7 @@
             ?>
         </ul>
     </body>
+<footer> &#169 Veterinaria 2020. todos los derechos reservados &#174.
+  </footer>
+  <adress> <img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-location-icon-png-image_3989706.jpg" alt="Girl in a jacket" width="10" height="10">Posadas- Misiones, Argentina.<br> <img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-location-icon-png-image_3989706.jpg" alt="Girl in a jacket" width="10" height="10"> Misiones, Argentina</adress><br>
 </html>
