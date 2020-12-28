@@ -13,9 +13,8 @@ $especie = $_POST['Especie'];
 $raza = $_POST['Raza'];
 $sexo = $_POST['Sexo'];
 $pelaje = $_POST['Pelaje'];
-$fecha_1 = $_POST["Fecha_nacimiento"];
-$Fecha_nacimiento = strftime($fecha_1);
-$Fecha_nacimiento = date('yyyy-mm-dd',$Fecha_nacimiento);
+$Fecha_nacimiento = "2016-11-18";
+$Fecha_nacimiento = date("Y-m-d", strtotime($Fecha_nacimiento));
 $id_dueño = $_POST['id_dueño'];
 
 
