@@ -8,16 +8,18 @@ if($link == false){
 }
 
 
-$nombre = $_POST["Nombre"];
-$especie = $_POST["Especie"];
-$raza = $_POST["Raza"];
-$sexo = $_POST["Sexo"];
-$pelaje = $_POST["Pelaje"];
-$fecha_nacimiento = $_POST["Fecha_nacimiento"];
-$id_dueño = $_POST["id_dueño"];
+$nombre = $_POST['Nombre'];
+$especie = $_POST['Especie'];
+$raza = $_POST['Raza'];
+$sexo = $_POST['Sexo'];
+$pelaje = $_POST['Pelaje'];
+$fecha_1 = $_POST["Fecha_nacimiento"];
+$Fecha_nacimiento = strftime($fecha_1);
+$Fecha_nacimiento = date('yyyy-mm-dd',$Fecha_nacimiento);
+$id_dueño = $_POST['id_dueño'];
 
 
-$sql = "INSERT INTO veterinaria.animal (Nombre, Especie, Raza, Sexo, Pelaje, Fecha_nacimiento, id_dueño, estado) VALUES (\"$nombre\", $especie, $raza, $sexo, $pelaje, $fecha_nacimiento, $id_dueño)";
+$sql = "INSERT INTO veterinaria.animal (Nombre, Especie, Raza, Sexo, Pelaje, Fecha_nacimiento, id_dueño, estado) VALUES (\"$nombre\", '$especie', '$raza', '$sexo', '$pelaje', '$Fecha_nacimiento', '$id_dueño', '1')";
 if(mysqli_query($link, $sql)){
     echo "Se almacenó correctamente el animal";
 } else{
