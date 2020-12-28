@@ -1,0 +1,53 @@
+
+.fondo_img{
+   
+    background-size: cover;
+    background-image: url("fondo.jpg");
+
+}
+table, td, th { 
+
+    border: 1px solid gainsboro ;
+    font-family: Arial;
+    color:black;
+    background-color: ghostwhite;
+    opacity: 0.9 ;
+    padding: 20px; 
+    border-radius: 4px;
+
+
+}
+table{
+
+    height: 200px;
+    width: 1500px;
+}
+
+td {
+    width: -20px;
+    height: 10px;
+    font-size: 16px;
+    
+}
+h1 {
+    color: white;
+    font-family: Arial;
+}
+
+div {
+    font-family: Arial;
+    color: gainsboro;
+}
+
+ul {
+    font-family: Arial;
+    color: gainsboro;
+}
+
+.agregar{
+
+}
+
+.campos{
+
+}

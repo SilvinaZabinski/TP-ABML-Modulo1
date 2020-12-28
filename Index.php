@@ -4,25 +4,25 @@
     <link rel="stylesheet" href="IndexStyle.Css">
     <title>Veterinaria</title>
   </head>
-  <h1> Veterinaria </h1> 
+  <h1> Veterinaria Zimba</h1> 
 
   <a href="formAM.php"><input type="button" value="Agregar"></a>
 
     
-    <body>
-        <table class="table table-striped table-bordered">
+    <body class= "fondo_img">
+        <table>
             <thead>
             <tr>
-            <th style='width:50px;'>ID</th>
-            <th style='width:150px;'>Nombre Animal</th>
-            <th style='width:150px;'>Especie</th>
-            <th style='width:150px;'>Raza</th>
-            <th style='width:150px;'>Sexo</th>
-            <th style='width:150px;'>Pelaje</th>
-            <th style='width:150px;'>Fecha Nacimiento</th>
-            <th style='width:150px;'>Dueño</th>
-            <th style='width:150px;'>Editar</th>
-            <th style='width:150px;'>Borrar</th>
+            <th>ID</th>
+            <th >Nombre Animal</th>
+            <th >Especie</th>
+            <th >Raza</th>
+            <th >Sexo</th>
+            <th >Pelaje</th>
+            <th >Fecha Nacimiento</th>
+            <th >Dueño</th>
+            <th >Editar</th>
+            <th >Borrar</th>
             
             
             </tr>
@@ -100,7 +100,7 @@
                 ?>
             </tbody>
         </table>
-        <div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
+        <div>
             <strong>Pagina <?php echo $paginaNro." de ".$totalPaginas; ?></strong>
         </div>
         <ul class="pagination">
