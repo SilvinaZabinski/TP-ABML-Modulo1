@@ -1,8 +1,9 @@
 
 .fondo_img{
-   
-    background-size: cover;
+    
     background-image: url("fondo.jpg");
+    background-size: cover;
+   
 
 }
 table, td, th { 
