@@ -125,5 +125,5 @@
     </body>
 <footer> &#169 Veterinaria 2020. todos los derechos reservados &#174.
   </footer>
-  <adress> <img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-location-icon-png-image_3989706.jpg" alt="Girl in a jacket" width="10" height="10">Posadas- Misiones, Argentina.<br> <img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-location-icon-png-image_3989706.jpg" alt="Girl in a jacket" width="10" height="10"> Misiones, Argentina</adress><br>
+  <adress> <img src="https://i.pinimg.com/originals/5d/5c/da/5d5cda59ca315dea67786b086b3eceb1.png" alt="Girl in a jacket" width="30" height="30"> Misiones, Argentina</adress><br>
 </html>
