@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="IndexStyle.Css">
     <title>Veterinaria</title>
   </head>
   <h1> Veterinaria </h1> 
